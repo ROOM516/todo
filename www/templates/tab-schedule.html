@@ -1,0 +1,25 @@
+<ion-view view-title="日程">
+  <ion-content>
+    <div class="list">
+     <label class="item item-input item-select">
+      <div class="input-label">
+       年月
+      </div>
+     <input type="month" ng-model="datevalue" ng-change="updateValue(datevalue)" >
+
+    </label>
+    </div>
+    <div class="row date-title">
+      <div class="col">日</div>
+      <div class="col">一</div>
+      <div class="col">二</div>
+      <div class="col">三</div>
+      <div class="col">四</div>
+      <div class="col">五</div>
+      <div class="col">六</div>
+    </div>
+    <div class="row date-content" ng-repeat="daterow in date">
+      <div class="col" ng-repeat="day in daterow track by $index"><a href="#/tab/schedule/{{ datevalue | date:'yyyy-MM' +'-'+day}}" >{{day}}</a></div>
+    </div>
+  </ion-content>
+</ion-view>

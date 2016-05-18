@@ -1,0 +1,19 @@
+<style>
+	body{
+		font-size: 50px;
+	}
+</style>
+<div onclick="demo()">
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul>
+</div>
+<script>
+	function demo(e){
+		if (!e)var e = window.event;
+		alert(e.target.innerHTML);
+	}
+</script>

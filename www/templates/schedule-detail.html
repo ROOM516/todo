@@ -1,0 +1,23 @@
+<ion-view view-title="{{datetodo.dateTime}}">
+  <ion-content class="padding">
+    <div class="list card">
+    	<div class="item item-avatar">
+    		<h2>{{datetodo.title}}</h2>
+    		<p>{{datetodo.dateTime}}</p>
+    	</div>
+    	<div class="item item-body" data-ng-bind-html="datetodo.todo">
+      </div>
+      <div class="item tabs tabs-secondary tabs-icon-left">
+      	<a class="tab-item"href="#">
+      			<i class="icon ion-thumbsup"></i>备注
+    		</a>
+    		<a class="tab-item" href="#">
+    			<i class="icon ion-chatbox"></i>完成
+    		</a>
+    		<a class="tab-item" href="#">
+    			<i class="icon ion-share"></i>终止
+    		</a>
+		</div>
+	</div>
+  </ion-content>
+</ion-view>
