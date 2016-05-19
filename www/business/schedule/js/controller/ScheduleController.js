@@ -6,7 +6,7 @@
  */
 new AppModule()
   .group("app.business.schedule.controller")
-  .require(["app.business.schedule.service", "app.business.scheduleDetail.controller"])
+  .require(["app.business.schedule.service", "app.business.scheduleAdd.controller", "app.business.scheduleDetail.controller"])
   .type("controller")
   .name("ScheduleCtrl")
   .params(["$scope", "$state", "ScheduleService"])
@@ -31,9 +31,10 @@ new AppModule()
       $scope.date = ScheduleService.getDate(year,month);
     };
 
-    //跳转详情
+    //跳转列表
     $scope.toDetail = function(){
-      $state.go("scheduleDetail");
+
+      $state.go("scheduleAdd");
     }
 
   })

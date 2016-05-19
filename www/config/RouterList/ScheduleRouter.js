@@ -25,5 +25,15 @@ var SCHEDULE_ROUTER = {
         controller: 'ScheduleDetailCtrl'
       }
     }
+  },
+  //添加日程路由
+  scheduleAdd : {
+    url: '/scheduleDetail',
+    views: {
+      'main_view': {
+        templateUrl: 'business/schedule/views/schedule_add.html',
+        controller: 'ScheduleAddCtrl'
+      }
+    }
   }
 };
