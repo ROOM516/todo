@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+body{
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  color : $default-font-color;
+}
+.has-footer {
+  bottom: 50px;
+}
+.has-header {
+  top: 44px;
+}
+.row + .row{
+  margin-top: 0;
+}
+.empty-text {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  color: $default3-font-color;
+}
+.back-btn:before{
+  font-size: 20px !important;
+}
+
+.button.button-grey {
+  border-color: transparent;
+  background-color: #b5b5b5;
+  color: $white-font-color;
+}
+
+.title-bar{
+  background-color: $title-background-color;
+}
+
+.tab-bar{
+  margin: 10px 0;
+  padding: 0 15px;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  .tab-bar-item{
+    border-top: $default-border;
+    border-bottom: $default-border;
+    border-right: $default-border;
+    padding: 0;
+    span{
+      border: none;
+    }
+  }
+}
+.tab-bar :first-child{
+  border-left: $default-border;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.tab-bar :last-child{
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.tab-active {
+  background: $default-button-color;
+  color: $white-font-color;
+}
+
+.scroll-view.scroll-y {
+  overflow-y: hidden;
+}
+
+.scroll-view.scroll-x {
+  overflow-x: hidden;
+}
+
+
+//ionic组件个性化样式
+.popup-container.active .popup{
+  border-radius: 5px;
+}
+.button-default {
+  background-color: $cancel-button-color;
+}

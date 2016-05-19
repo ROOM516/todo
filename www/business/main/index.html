@@ -1,0 +1,26 @@
+<ion-view view-title="消息" class="todo-msg">
+  <ion-nav-bar class="bar-positive" align-title="center">
+  </ion-nav-bar>
+  <ion-content>
+    <ion-list ng-repeat="msg in msgList">
+      <ion-item ng-click="toDetail(msg)">
+        <div class="msg">
+          <div class="msg-left">
+            <span class="font-icon">{{msg.face}}</span>
+            <span class="font-icon-msg">
+              <span class="font-icon-msg-num">{{msg.num}}</span>
+            </span>
+          </div>
+          <div class="msg-right">
+            <div class="msg-right-up">
+              {{msg.title}}
+            </div>
+            <div class="msg-right-down">
+              {{msg.msg_short}}
+            </div>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

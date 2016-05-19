@@ -1,0 +1,14 @@
+<div>
+  <div id="picker_mask_{{id}}" class="item-picker" style="display: none;" ng-click="hide()">
+  </div>
+  <div id="picker_{{id}}" class="picker-container" style="display: none;">
+    <div class="row picker-title">
+      <div class="col">{{title}}</div>
+    </div>
+    <ion-scroll class="item-scroll" has-bouncing="true" scrollbar-y="false" delegate-handle="pickerScroller">
+      <div class="pick-item" ng-repeat="item in data" ng-click="itemClick(item.value)">
+        {{item.text}}
+      </div>
+    </ion-scroll>
+  </div>
+</div>

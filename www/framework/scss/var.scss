@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+//标准左右边距
+$boundary-left-right: 15px;
+//标准上下边距
+$boundary-top-bottom: 5px;
+//标准边线颜色
+$default-border: 1px solid #c0c0c0;
+//标题背景色
+$title-background-color: #f4f4f4;
+//列表标题背景色
+$list-title-background-color: #FDF2D9;
+//表格内容背景色
+$form-content-background-color: #fff;
+//列表内容背景色
+$list-item-background-color: #fff;
+//标准背景色
+$default-background-color: #fff;
+//1级背景色
+$default1-background-color: #f9f9f9;
+//警告色
+$warning-color: #d84a53;
+//最小字体号
+$font-small: 12px;
+//中等字体号
+$font-default: 14px;
+//大号字体号
+$font-large: 16px;
+//标题字体
+$font-title: 18px;
+
+//字体颜色从 default - default3 由深至浅
+//标准字体颜色
+$default-font-color: #181818;
+//1级字体颜色
+$default1-font-color: #717171;
+//2级字体颜色
+$default2-font-color: #999;
+//3级字体颜色
+$default3-font-color: #aaa;
+//白色字体
+$white-font-color: #fff;
+
+//按钮颜色从 default - default3 由深至浅
+//标准按钮颜色
+$default-button-color: #fcba32;
+//标准取消按钮背景色
+$cancel-button-color: #e9e9e9;
+//1级按钮背景色
+$default1-button-color: #d5d5d5;
+
+
