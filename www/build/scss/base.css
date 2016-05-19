@@ -1,0 +1,50 @@
+.todo-msg .msg .msg-left {
+  float: left; }
+  .todo-msg .msg .msg-left .font-icon {
+    color: #FFF;
+    padding: 13px;
+    background: #FC9;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    display: inline-block; }
+  .todo-msg .msg .msg-left .font-icon-msg {
+    margin-left: -20px;
+    position: relative;
+    top: -18px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    height: 16px;
+    width: 16px;
+    background: red;
+    display: inline-block;
+    line-height: 14px; }
+  .todo-msg .msg .msg-left .font-icon-msg-num {
+    height: 16px;
+    width: 16px;
+    color: #fff;
+    font-size: 8px;
+    display: inline-block;
+    text-align: center; }
+.todo-msg .msg .msg-right {
+  float: left;
+  padding-left: 15px; }
+.todo-msg .msg .msg-right-up {
+  font-size: 16px; }
+.todo-msg .msg .msg-right-down {
+  font-size: 12px; }
+
+.todo-schedule .date-title {
+  background: #EFE;
+  font-size: 20px;
+  text-align: center; }
+.todo-schedule .date-content {
+  background: #fef;
+  font-size: 18px;
+  text-align: center; }
+
+/*# sourceMappingURL=base.css.map */
