@@ -12,6 +12,28 @@ new AppModule()
   .action(function (AppHttpService, AppMessageService) {
     return {
       dateTime : "",
+      //初始化加载
+      loadData : function(onSuccess){
+        onSuccess([]);
+        return
+        AppHttpService.send({
+          type: 'GET',
+          url: "todo/saveSchedule",
+          params: {
+          },
+          onSuccess: function (data) {
+
+            if(data.msgCode == 0){
+
+              onSuccess(data.list);
+            } else {
+            }
+          },
+          onError: function () {
+          }
+        });
+      },
+      //保存
       save: function (callback, data) {
         console.log(data);
         var me = this;

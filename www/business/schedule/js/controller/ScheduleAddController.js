@@ -12,6 +12,10 @@ new AppModule()
   .params(["$scope", "$state", "ScheduleAddService"])
   .action(function($scope, $state, ScheduleAddService){
 
+    ScheduleAddService.loadData(function(data){
+      $scope.scheduleList = data;
+    });
+
     $scope.datetodo ={
       dateTime : "",
       todo:'',
@@ -19,6 +23,7 @@ new AppModule()
     };
     //提交todo
     $scope.submit = function(){
+
       ScheduleAddService.save(function(data){
         $state.go('tab.schedule',{});
       },$scope.datetodo);
